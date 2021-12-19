@@ -1,0 +1,26 @@
+.link {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  &--blue {
+    color: $color-blue;
+
+    &:hover {
+      color: $color-blue-dark;
+    }
+  }
+
+  &--gray {
+    color: $color-gray-light;
+  }
+
+  &--underline {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

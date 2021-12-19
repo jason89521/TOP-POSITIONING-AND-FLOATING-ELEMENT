@@ -1,0 +1,28 @@
+.dropdown {
+  list-style: none;
+  
+  &__item {
+    position: relative;
+    color: black;
+    padding: .5rem 1rem;
+    background-color: $color-gray-extra-light;
+    &:hover {
+      color: $color-blue;
+
+      &::after{
+        background-color: black;
+        height: 5px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      height: 0px;
+      transition: all .3s;
+    }
+  }
+}

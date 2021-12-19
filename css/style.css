@@ -19,6 +19,18 @@ html {
   padding: 0 12.5rem;
 }
 
+.figure-caption {
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.figure-credit {
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
 .header {
   padding-top: 2rem;
   border-bottom: 1px solid #aaaaaa;
@@ -48,6 +60,7 @@ html {
   text-decoration: none;
   border-radius: 5px;
   font-weight: 700;
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
 }
 .top__subscribe:hover {
   background-color: #288eb7;
@@ -68,6 +81,22 @@ html {
 }
 .link--underline:hover {
   text-decoration: underline;
+}
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+}
+.btn--navyblue {
+  color: white;
+  background-color: #005587;
+}
+.btn--navyblue:hover {
+  background-color: #288eb7;
 }
 
 .navbar {
@@ -109,7 +138,7 @@ html {
 .navbar__item--active {
   color: #00b3e5;
 }
-.navbar__item--active::after {
+.navbar__item--active::before {
   background-color: black;
   height: 5px;
 }
@@ -175,6 +204,70 @@ html {
   bottom: 0;
   height: 0px;
   transition: all 0.3s;
+}
+
+.article {
+  width: 70%;
+}
+.article__header {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
+}
+.article__title {
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 3.125rem;
+}
+.article__info {
+  color: #787878;
+  font-size: 1.2rem;
+}
+.article__info a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-family: inherit;
+}
+.article__info a:hover {
+  text-decoration: underline;
+}
+.article__author {
+  color: #787878;
+}
+.article__author a {
+  color: #00b3e5;
+  text-decoration: none;
+  font-weight: 700;
+}
+.article__content {
+  padding-top: 2rem;
+}
+.article__content p {
+  color: #4d4d4d;
+  font-size: 1.1rem;
+}
+.article__content p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.article__content p strong {
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
+}
+.article__box {
+  font-weight: 700;
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+}
+.article__more {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

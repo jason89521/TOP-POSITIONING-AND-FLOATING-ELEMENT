@@ -1,0 +1,76 @@
+.article {
+  width: 70%;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-family: $font-Titillium-Web;
+  }
+
+  &__title {
+    font-family: $font-Titillium-Web;
+    font-weight: 700;
+    font-size: 3.125rem;
+  }
+
+  &__info {
+    color: $color-gray;
+    font-size: 1.2rem;
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+      font-weight: 700;
+      font-family: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__author {
+    color: $color-gray;
+
+    a {
+      color: $color-blue;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  }
+
+  &__content {
+    padding-top: 2rem;
+
+    p {
+      color: $color-gray-dark;
+      font-size: 1.1rem;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+      strong {
+        font-family: $font-Titillium-Web;
+      }
+    }
+  }
+
+  &__box {
+    font-weight: 700;
+    font-family: $font-Titillium-Web;
+    background-color: $color-gray-extra-light;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__more {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    font-family: $font-Titillium-Web;
+    font-weight: 700;
+  }
+}

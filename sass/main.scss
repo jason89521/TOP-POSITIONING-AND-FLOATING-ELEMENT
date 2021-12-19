@@ -2,6 +2,7 @@
 
 @import './base/reset';
 @import './base/utils';
+@import './base/typography';
 
 @import './layout/header';
 
@@ -10,3 +11,4 @@
 @import './components/button';
 @import './components/navbar';
 @import './components/dropdown';
+@import './components/article';

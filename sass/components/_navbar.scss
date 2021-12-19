@@ -41,7 +41,7 @@
     &--active {
       color: $color-blue;
 
-      &::after {
+      &::before {
         background-color: black;
         height: 5px;
       }

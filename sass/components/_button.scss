@@ -1,0 +1,21 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: $font-Titillium-Web;
+    padding: .5rem .5rem;
+    border-radius: 5px;
+  }
+
+  &--navyblue {
+    color: white;
+    background-color: $color-navyblue;
+
+    &:hover {
+      background-color: $color-blue-dark;
+    }
+  }
+}

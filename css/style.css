@@ -34,6 +34,10 @@ html {
 .header {
   padding-top: 2rem;
   border-bottom: 1px solid #aaaaaa;
+  background-color: white;
+  position: sticky;
+  top: -7.5rem;
+  z-index: 10;
 }
 
 .top {
@@ -100,6 +104,8 @@ html {
 }
 
 .navbar {
+  position: sticky;
+  top: 0;
   padding-top: 1rem;
   font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
   font-weight: 700;
@@ -208,6 +214,13 @@ html {
 
 .article {
   width: 70%;
+  flex: 0 1 70%;
+}
+.article figure {
+  overflow: hidden;
+}
+.article figure img {
+  width: 100%;
 }
 .article__header {
   display: flex;
@@ -218,7 +231,7 @@ html {
 .article__title {
   font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
   font-weight: 700;
-  font-size: 3.125rem;
+  font-size: 3rem;
 }
 .article__info {
   color: #787878;
@@ -243,7 +256,7 @@ html {
   font-weight: 700;
 }
 .article__content {
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 .article__content p {
   color: #4d4d4d;
@@ -268,6 +281,80 @@ html {
   align-items: baseline;
   font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
   font-weight: 700;
+}
+
+.sidebar {
+  flex: 0 1 25%;
+  padding-top: 1.5rem;
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
+  font-weight: 700;
+}
+.sidebar__tabs-box {
+  display: flex;
+  gap: 0.25rem;
+}
+.sidebar__tab {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 0.5rem 0.5rem;
+  background-color: #f7f7f7;
+}
+.sidebar__tab:hover:not(.sidebar__tab--active) {
+  background-color: #aaaaaa;
+}
+.sidebar__tab--active {
+  color: white;
+  background-color: #00b3e5;
+}
+.sidebar__trending-box {
+  margin-top: 0.25rem;
+  font-family: Titillium Web, Helvetica, Trebuchet MS, Arial, sans-serif;
+}
+.sidebar__trending {
+  padding: 1rem 0.5rem;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem;
+}
+.sidebar__trending:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+.sidebar__trending a {
+  flex: 0 1 85%;
+  color: #4d4d4d;
+}
+.sidebar__trending a:hover {
+  color: #00b3e5;
+}
+.sidebar__trending span {
+  color: #00b3e5;
+  transform: scale(2);
+}
+
+.social {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.social * {
+  width: 2rem;
+  height: 2rem;
+}
+.social__fb {
+  color: #005587;
+}
+.social__email, .social__printer {
+  background-color: #999999;
+  border-radius: 50%;
+}
+
+.section-main {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

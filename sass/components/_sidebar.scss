@@ -1,0 +1,62 @@
+.sidebar {
+  flex: 0 1 25%;
+  padding-top: 1.5rem;
+  font-family: $font-Titillium-Web;
+  font-weight: 700;
+
+  &__tabs-box {
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  &__tab {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding: 0.5rem 0.5rem;
+    background-color: $color-gray-extra-light;
+
+    &:hover {
+      &:not(.sidebar__tab--active) {
+        background-color: $color-gray-light;
+      }
+    }
+
+    &--active {
+      color: white;
+      background-color: $color-blue;
+    }
+  }
+
+  &__trending-box {
+    margin-top: 0.25rem;
+    font-family: $font-Titillium-Web;
+  }
+
+  &__trending {
+    padding: 1rem 0.5rem;
+    background-color: $color-gray-extra-light;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+
+    &:not(:last-child) {
+      margin-bottom: 0.25rem;
+    }
+
+    a {
+      flex: 0 1 85%;
+      color: $color-gray-dark;
+
+      &:hover {
+        color: $color-blue;
+      }
+    }
+
+    span {
+      color: $color-blue;
+      transform: scale(2);
+    }
+  }
+}

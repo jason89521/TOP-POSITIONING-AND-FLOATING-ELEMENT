@@ -1,5 +1,13 @@
 .article {
   width: 70%;
+  flex: 0 1 70%;
+
+  figure {
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
 
   &__header {
     display: flex;
@@ -11,7 +19,7 @@
   &__title {
     font-family: $font-Titillium-Web;
     font-weight: 700;
-    font-size: 3.125rem;
+    font-size: 3rem;
   }
 
   &__info {
@@ -42,7 +50,7 @@
   }
 
   &__content {
-    padding-top: 2rem;
+    padding: 2rem 0;
 
     p {
       color: $color-gray-dark;

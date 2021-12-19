@@ -1,0 +1,21 @@
+.social {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  * {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__fb {
+    color: $color-navyblue;
+  }
+
+  &__email,
+  &__printer {
+    background-color: #999999;
+    border-radius: 50%;
+  }
+}

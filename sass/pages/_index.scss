@@ -2,3 +2,16 @@
   display: flex;
   justify-content: space-between;
 }
+
+.section-other {
+  padding: 2rem 0;
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      max-width: 22.5%;
+    }
+  }
+}

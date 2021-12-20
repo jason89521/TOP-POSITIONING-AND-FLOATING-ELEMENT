@@ -81,4 +81,27 @@
     font-family: $font-Titillium-Web;
     font-weight: 700;
   }
+
+  &__footer {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__right {
+      display: flex;
+      gap: 1rem;
+    }
+
+    &__btn-box {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .btn {
+      width: 12.5rem;
+      text-align: center;
+    }
+  }
 }

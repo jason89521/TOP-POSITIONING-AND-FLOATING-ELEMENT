@@ -8,14 +8,38 @@
     font-family: $font-Titillium-Web;
     padding: .5rem .5rem;
     border-radius: 5px;
+    color: white;
   }
 
   &--navyblue {
-    color: white;
     background-color: $color-navyblue;
 
     &:hover {
       background-color: $color-blue-dark;
+    }
+  }
+
+  &--blue {
+    background-color: $color-blue;
+
+    &:hover {
+      background-color: $color-blue-dark;
+    }
+  }
+
+  &--green {
+    background-color: #20b2aa;
+
+    &:hover {
+      background-color: #5f9ea0;
+    }
+  }
+
+  &--red {
+    background-color: red;
+
+    &:hover {
+      background-color: #de1d1d;
     }
   }
 }
